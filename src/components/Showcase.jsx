@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./Showcase.css";
+import "./showcase.css";
 
 const showcaseItems = [
     {
