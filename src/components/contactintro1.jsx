@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./ContactInto1.css";
+import "./Contactinto1.css";
 
 export default function ContactIntro1() {
   return (
