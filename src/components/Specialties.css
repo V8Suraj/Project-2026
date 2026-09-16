@@ -1,0 +1,412 @@
+/* =========================================
+   SPECIALTIES SECTION
+========================================= */
+
+.specialties-section {
+    width: 100%;
+    min-height: 850px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    padding: 0;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.specialties-container {
+    width: 1085px;
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.specialties-heading {
+    padding-top: 0;
+}
+
+.specialties-heading h1 {
+    margin: 0;
+
+    color: #073f49;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 105px;
+
+    font-weight: 700;
+
+    line-height: .95;
+
+    letter-spacing: -6px;
+
+    white-space: nowrap;
+}
+
+
+/* LINE */
+
+.specialties-divider {
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: 28px;
+
+    background: #e5e5e5;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.specialties-content {
+    display: grid;
+
+    grid-template-columns:
+        1fr 440px;
+
+    align-items: center;
+
+    column-gap: 80px;
+
+    margin-top: 32px;
+}
+
+
+/* =========================================
+   LEFT TEXT
+========================================= */
+
+.specialties-copy {
+    align-self: center;
+
+    padding-left: 90px;
+
+    padding-top: 95px;
+
+    max-width: 500px;
+}
+
+.specialties-copy h2 {
+    margin: 0 0 25px;
+
+    color: #050505;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 46px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+
+    animation:
+        specialtyTextIn .7s cubic-bezier(.16, 1, .3, 1);
+}
+
+.specialties-copy p {
+    margin: 0;
+
+    color: #7b7b7b;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    animation:
+        specialtyParagraphIn .85s cubic-bezier(.16, 1, .3, 1);
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+
+.specialties-image-area {
+    position: relative;
+
+    width: 440px;
+
+    padding-bottom: 55px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.specialties-image-wrapper {
+    position: relative;
+
+    width: 440px;
+
+    height: 610px;
+
+    overflow: hidden;
+}
+
+.specialties-image {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* slide animation */
+
+.specialties-image.next {
+    animation:
+        specialtyImageNext .8s cubic-bezier(.16, 1, .3, 1);
+}
+
+.specialties-image.prev {
+    animation:
+        specialtyImagePrev .8s cubic-bezier(.16, 1, .3, 1);
+}
+
+
+/* =========================================
+   ARROWS
+========================================= */
+
+.specialties-arrows {
+    position: absolute;
+
+    left: 20px;
+
+    bottom: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+}
+
+.specialties-arrows button {
+    width: 35px;
+
+    height: 35px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #143f4c;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 31px;
+
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+}
+
+.specialties-arrows button:first-child:hover {
+    transform: translateX(-5px);
+}
+
+.specialties-arrows button:last-child:hover {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   IMAGE ANIMATION
+========================================= */
+
+@keyframes specialtyImageNext {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateX(70px) scale(1.04);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateX(0) scale(1);
+    }
+}
+
+
+@keyframes specialtyImagePrev {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateX(-70px) scale(1.04);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateX(0) scale(1);
+    }
+}
+
+
+/* =========================================
+   TEXT ANIMATION
+========================================= */
+
+@keyframes specialtyTextIn {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes specialtyParagraphIn {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .specialties-heading h1 {
+        font-size: 80px;
+
+        letter-spacing: -4px;
+    }
+
+    .specialties-content {
+        grid-template-columns:
+            1fr 440px;
+
+        column-gap: 40px;
+    }
+
+    .specialties-copy {
+        padding-left: 20px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .specialties-section {
+        padding-bottom: 70px;
+    }
+
+    .specialties-heading h1 {
+        font-size: 52px;
+
+        white-space: normal;
+
+        letter-spacing: -3px;
+    }
+
+    .specialties-content {
+        grid-template-columns: 1fr;
+
+        row-gap: 50px;
+
+        margin-top: 40px;
+    }
+
+    .specialties-copy {
+        padding: 0;
+
+        max-width: 100%;
+    }
+
+    .specialties-copy h2 {
+        font-size: 38px;
+    }
+
+    .specialties-copy p {
+        font-size: 15px;
+    }
+
+    .specialties-image-area {
+        width: 100%;
+
+        max-width: 440px;
+
+        margin: 0 auto;
+    }
+
+    .specialties-image-wrapper {
+        width: 100%;
+
+        height: 560px;
+    }
+}

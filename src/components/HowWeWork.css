@@ -1,0 +1,312 @@
+/* =====================================================
+   HOW WE WORK
+===================================================== */
+
+.how-we-work {
+    width: 100%;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    padding: 95px 0 120px;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.how-work-container {
+    width: 1200px;
+
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.how-work-heading h2 {
+    margin: 0;
+
+    color: #073f49;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 92px;
+
+    line-height: .95;
+
+    font-weight: 700;
+
+    letter-spacing: -5px;
+}
+
+
+.how-work-divider {
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: 20px;
+
+    background: #e6e6e6;
+}
+
+
+.how-work-heading p {
+    margin: 15px 0 0;
+
+    color: #65b8df;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 27px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   STEPS ROW
+===================================================== */
+
+.how-work-steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(8, 1fr);
+
+    column-gap: 0;
+
+    margin-top: 62px;
+}
+
+
+/* =====================================================
+   EACH STEP
+===================================================== */
+
+.how-work-item {
+    position: relative;
+
+    min-width: 0;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   CONNECTING LINE
+===================================================== */
+
+.how-work-connector {
+    position: absolute;
+
+    top: 45px;
+
+    left: -50%;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #d9dee3;
+
+    z-index: 0;
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.how-work-icon-wrap {
+    position: relative;
+
+    width: 88px;
+
+    height: 88px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+
+.how-work-icon {
+    width: 61px;
+
+    height: 61px;
+
+    color: #223d63;
+
+    display: block;
+}
+
+
+/* =====================================================
+   NUMBER CIRCLE
+===================================================== */
+
+.how-work-number {
+    position: absolute;
+
+    top: -4px;
+
+    right: -4px;
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #213b61;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, .08);
+}
+
+
+/* =====================================================
+   STEP TITLE
+===================================================== */
+
+.how-work-step-title {
+    max-width: 160px;
+
+    margin: 22px auto 0;
+
+    color: #243b5e;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    text-align: center;
+}
+
+/* =====================================================
+   HOVER ANIMATION
+===================================================== */
+
+.how-work-item .how-work-icon {
+    transition:
+        transform .35s ease;
+}
+
+.how-work-item:hover .how-work-icon {
+    transform:
+        translateY(-5px) scale(1.05);
+}
+
+.how-work-item:hover .how-work-number {
+    transform: scale(1.08);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .how-work-heading h2 {
+        font-size: 75px;
+    }
+
+    .how-work-heading p {
+        font-size: 23px;
+    }
+
+    .how-work-steps {
+        grid-template-columns:
+            repeat(4, 1fr);
+
+        row-gap: 60px;
+    }
+
+    .how-work-connector {
+        display: none;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .how-we-work {
+        padding:
+            65px 0 80px;
+    }
+
+    .how-work-heading h2 {
+        font-size: 50px;
+
+        letter-spacing: -3px;
+    }
+
+    .how-work-heading p {
+        font-size: 20px;
+
+        line-height: 1.35;
+    }
+
+    .how-work-steps {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        row-gap: 55px;
+
+        margin-top: 45px;
+    }
+
+    .how-work-step-title {
+        font-size: 14px;
+
+        max-width: 145px;
+    }
+
+}

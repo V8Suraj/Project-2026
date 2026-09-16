@@ -1,0 +1,222 @@
+.about-section {
+  width: 100%;
+  min-height: 700px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  padding: 90px 0;
+}
+
+.about-container {
+  width: 1085px;
+  max-width: calc(100% - 40px);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 470px;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.about-text-content {
+  max-width: 590px;
+}
+
+.about-text-content h1 {
+  margin: 0;
+
+  color: #073f49;
+
+  font-size: 86px;
+
+  line-height: 0.95;
+
+  font-weight: 700;
+
+  letter-spacing: -5px;
+}
+
+.about-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin-top: 18px;
+
+  background: #e5e5e5;
+}
+
+.about-text-content h2 {
+  margin: 16px 0 22px;
+
+  color: #66b8df;
+
+  font-size: 29px;
+
+  line-height: 1.15;
+
+  font-weight: 700;
+}
+
+.about-text-content p {
+  margin: 0 0 24px;
+
+  color: #222;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+  font-weight: 400;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.about-gallery {
+  position: relative;
+
+  width: 470px;
+
+  height: 470px;
+
+  padding-bottom: 60px;
+}
+
+.about-stack {
+  position: relative;
+
+  width: 430px;
+
+  height: 400px;
+}
+
+.about-stack-image {
+  position: absolute;
+
+  object-fit: cover;
+
+  display: block;
+
+  border-radius: 0;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.10);
+
+  will-change:
+    transform,
+    opacity;
+}
+
+
+/* =========================
+   ARROWS
+========================= */
+
+.about-arrows {
+  position: absolute;
+
+  left: 75px;
+
+  bottom: 0;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+.about-arrows button {
+  width: 38px;
+  height: 38px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #183e57;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1050px) {
+
+  .about-container {
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+  .about-text-content {
+    max-width: 700px;
+  }
+
+  .about-gallery {
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .about-section {
+    padding: 65px 0 80px;
+  }
+
+  .about-container {
+    max-width: calc(100% - 30px);
+
+    gap: 45px;
+  }
+
+  .about-text-content h1 {
+    font-size: 52px;
+
+    letter-spacing: -3px;
+  }
+
+  .about-text-content h2 {
+    font-size: 21px;
+  }
+
+  .about-text-content p {
+    font-size: 15px;
+  }
+
+  .about-gallery {
+    width: 360px;
+
+    height: 390px;
+
+    transform: scale(0.78);
+
+    transform-origin: top left;
+  }
+}

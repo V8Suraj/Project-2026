@@ -1,0 +1,351 @@
+/* ============================================
+   PROJECT HERO
+============================================ */
+
+.project-hero {
+    position: relative;
+    margin-top: -110px;
+    width: 100%;
+
+    height: 760px;
+
+    overflow: hidden;
+
+    background: #111;
+}
+
+
+/* ============================================
+   BACKGROUND
+============================================ */
+
+.project-hero-bg {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+
+/* ============================================
+   OVERLAY
+============================================ */
+
+.project-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.38);
+
+    z-index: 1;
+}
+
+
+/* ============================================
+   CENTER TITLE
+============================================ */
+
+.project-hero-title {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 2;
+
+    padding-bottom: 80px;
+}
+
+.project-hero-title h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 72px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    text-shadow:
+        0 3px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ============================================
+   CARD SLIDER
+============================================ */
+
+.project-card-slider {
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+
+    z-index: 5;
+
+    width: 58%;
+
+    height: 145px;
+
+    padding: 18px 0 18px 22px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ============================================
+   CARD LIST
+============================================ */
+
+.project-card-list {
+    display: flex;
+
+    align-items: center;
+
+    gap: 48px;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* ============================================
+   CARD
+============================================ */
+
+.project-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex: 1;
+
+    min-width: 0;
+
+    color: #173d62;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        transform .3s ease,
+        opacity .3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+
+    opacity: .88;
+}
+
+
+/* IMAGE */
+
+.project-card img {
+    width: 145px;
+
+    height: 78px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+}
+
+
+/* TITLE */
+
+.project-card-title {
+    color: #173d62;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* ============================================
+   ARROWS BOX
+============================================ */
+
+.project-card-arrows {
+    width: 55px;
+
+    height: 100%;
+
+    margin-left: 10px;
+
+    background: #213f67;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+/* ARROW BUTTON */
+
+.project-card-arrows button {
+    width: 100%;
+
+    height: 50%;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 34px;
+
+    font-weight: 200;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease;
+}
+
+.project-card-arrows button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ============================================
+   TABLET
+============================================ */
+
+@media (max-width: 1100px) {
+
+    .project-hero {
+        height: 680px;
+    }
+
+    .project-hero-title h1 {
+        font-size: 62px;
+    }
+
+    .project-card-slider {
+        width: 70%;
+    }
+
+    .project-card-list {
+        gap: 25px;
+    }
+
+    .project-card img {
+        width: 120px;
+        height: 68px;
+    }
+
+}
+
+
+/* ============================================
+   MOBILE
+============================================ */
+
+@media (max-width: 750px) {
+
+    .project-hero {
+        height: 620px;
+    }
+
+    .project-hero-title {
+        padding-bottom: 100px;
+    }
+
+    .project-hero-title h1 {
+        font-size: 50px;
+    }
+
+    .project-card-slider {
+        width: 100%;
+
+        height: auto;
+
+        min-height: 125px;
+
+        padding: 14px;
+    }
+
+    .project-card-list {
+        gap: 15px;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+    }
+
+    .project-card-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-card {
+        min-width: 190px;
+    }
+
+    .project-card img {
+        width: 90px;
+
+        height: 60px;
+    }
+
+    .project-card-title {
+        font-size: 13px;
+    }
+
+    .project-card-arrows {
+        width: 45px;
+    }
+
+}

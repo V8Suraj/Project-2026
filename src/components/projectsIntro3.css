@@ -1,0 +1,309 @@
+/* =====================================================
+   PROJECTS SECTION
+===================================================== */
+
+.projects-section {
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 105px 0 110px;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.projects-section-container {
+    width: 1085px;
+
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.projects-section-heading h2 {
+    margin: 0;
+
+    color: #073f49;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 96px;
+
+    line-height: 0.9;
+
+    font-weight: 700;
+
+    letter-spacing: -6px;
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.projects-section-divider {
+    width: 100%;
+
+    height: 1px;
+
+    margin-top: 24px;
+
+    background: #e5e5e5;
+}
+
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.projects-section-heading p {
+    margin: 17px 0 0;
+
+    color: #68b9df;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 29px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CARD GRID
+===================================================== */
+
+.projects-section-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+
+    margin-top: 62px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.project-info-card {
+    display: block;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    border-radius: 11px;
+
+    background: #ffffff;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 7px 22px rgba(0, 0, 0, 0.13);
+
+    transition:
+        box-shadow 0.35s ease;
+}
+
+
+.project-info-card:hover {
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.17);
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.project-info-card-image {
+    width: 100%;
+
+    height: 265px;
+
+    overflow: hidden;
+
+    background: #efefef;
+}
+
+
+.project-info-card-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s cubic-bezier(.16, 1, .3, 1);
+}
+
+
+.project-info-card:hover .project-info-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.project-info-card-content {
+    min-height: 212px;
+
+    padding: 25px 15px 27px;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.project-info-card-content h3 {
+    margin: 0;
+
+    color: #050505;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   CARD DESCRIPTION
+===================================================== */
+
+.project-info-card-content p {
+    margin: 17px auto 0;
+
+    max-width: 315px;
+
+    color: #59717a;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    font-weight: 400;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1050px) {
+
+    .projects-section-heading h2 {
+        font-size: 78px;
+
+        letter-spacing: -4px;
+    }
+
+    .projects-section-grid {
+        gap: 20px;
+    }
+
+    .project-info-card-image {
+        height: 235px;
+    }
+
+    .project-info-card-content p {
+        font-size: 15px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 720px) {
+
+    .projects-section {
+        padding: 70px 0 80px;
+    }
+
+    .projects-section-heading h2 {
+        font-size: 52px;
+
+        line-height: 0.95;
+
+        letter-spacing: -3px;
+    }
+
+    .projects-section-heading p {
+        font-size: 21px;
+
+        line-height: 1.3;
+    }
+
+    .projects-section-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+
+        margin-top: 45px;
+    }
+
+    .project-info-card-image {
+        height: 270px;
+    }
+
+    .project-info-card-content {
+        min-height: auto;
+
+        padding: 24px 18px 30px;
+    }
+
+    .project-info-card-content h3 {
+        font-size: 23px;
+    }
+
+    .project-info-card-content p {
+        max-width: 390px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+}

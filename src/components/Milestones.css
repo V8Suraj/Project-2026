@@ -1,0 +1,181 @@
+.milestones-section {
+    width: 100%;
+    background: #ffffff;
+}
+
+.milestones-container {
+    width: 100%;
+    padding: 100px 5% 150px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.milestones-heading {
+    margin: 0;
+
+    color: #063f49;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(60px, 6.2vw, 120px);
+    font-weight: 700;
+
+    line-height: 0.95;
+    letter-spacing: -5px;
+}
+
+/* Main line below heading */
+
+.milestones-divider {
+    width: 100%;
+    height: 1px;
+    background: #e3e3e3;
+
+    margin-top: 38px;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.milestones-grid {
+    width: 100%;
+    max-width: 1140px;
+
+    margin: 55px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 24px;
+}
+
+
+/* =========================
+   ITEM
+========================= */
+
+.milestone-item {
+    width: 100%;
+}
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.milestone-number {
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(80px, 7vw, 115px);
+    font-weight: 700;
+
+    line-height: 0.95;
+    letter-spacing: -4px;
+
+    /* Outline */
+    -webkit-text-stroke: 2px #294875;
+}
+
+
+/* =========================
+   LINE
+========================= */
+
+.milestone-line {
+    width: 100%;
+    height: 1px;
+
+    background: #d9dfe7;
+
+    margin-top: 28px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+.milestone-title {
+    margin-top: 28px;
+
+    color: #17375f;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .milestones-container {
+        padding: 80px 5% 100px;
+    }
+
+    .milestones-heading {
+        font-size: clamp(55px, 9vw, 85px);
+        letter-spacing: -3px;
+    }
+
+    .milestones-grid {
+        margin-top: 45px;
+    }
+
+    .milestone-number {
+        font-size: clamp(60px, 10vw, 90px);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .milestones-container {
+        padding: 60px 24px 70px;
+    }
+
+    .milestones-heading {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .milestones-divider {
+        margin-top: 28px;
+    }
+
+    .milestones-grid {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+
+        margin-top: 45px;
+    }
+
+    .milestone-number {
+        font-size: 76px;
+    }
+
+    .milestone-line {
+        margin-top: 20px;
+    }
+
+    .milestone-title {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}

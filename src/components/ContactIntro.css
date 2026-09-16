@@ -1,0 +1,196 @@
+/* =========================================
+   CONTACT INTRO
+========================================= */
+
+.contact-intro {
+  width: 100%;
+  min-height: 430px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  padding: 0;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.contact-intro-container {
+  width: 1140px;
+
+  max-width: calc(100% - 40px);
+
+  margin: 0 auto;
+
+  padding-top: 42px;
+}
+
+
+/* =========================================
+   TOP RIGHT LINK
+========================================= */
+
+.contact-intro-link {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-bottom: 35px;
+}
+
+.contact-intro-link a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid #1f3d60;
+
+  color: #1f3d60;
+
+  text-decoration: none;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+.contact-intro-arrow {
+  font-size: 20px;
+
+  line-height: 1;
+
+  position: relative;
+
+  top: -1px;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.contact-intro-title {
+  margin: 0;
+
+  color: #073f49;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 94px;
+
+  font-weight: 700;
+
+  line-height: 0.95;
+
+  letter-spacing: -5px;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.contact-intro-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin-top: 24px;
+
+  background: #e5e5e5;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.contact-intro-subtitle {
+  margin: 17px 0 0;
+
+  color: #67b9df;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 29px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.5px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .contact-intro-title {
+    font-size: 78px;
+
+    letter-spacing: -4px;
+  }
+
+  .contact-intro-subtitle {
+    font-size: 25px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .contact-intro {
+    min-height: auto;
+
+    padding-bottom: 60px;
+  }
+
+  .contact-intro-container {
+    padding-top: 35px;
+  }
+
+  .contact-intro-link {
+    margin-bottom: 35px;
+  }
+
+  .contact-intro-title {
+    font-size: 52px;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+  }
+
+  .contact-intro-subtitle {
+    font-size: 21px;
+
+    line-height: 1.3;
+  }
+}
